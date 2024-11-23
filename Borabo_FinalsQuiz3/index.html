@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Student Enrollment Form</title>
+   
+</head>
+<body>
+
+    <header>
+        <h1>Student Enrollment Form</h1>
+    </header>
+
+    <section>
+        <h3>Instructions:</h3>
+        <ol>
+            <li>Fill in the form fields.</li>
+            <li>Check your interests.</li>
+            <li>Click "Enroll Now" to submit.</li>
+        </ol>
+    </section>
+
+    <section class="form-container">
+        <form action="#" method="post">
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="18" max="100" required>
+
+            <label>Sex:</label>
+            <input type="radio" id="male" name="sex" value="Male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="sex" value="Female">
+            <label for="female">Female</label>
+
+            <label for="course">Course Options:</label>
+            <select id="course" name="course" required>
+                <option value="BSIT">BSIT</option>
+                <option value="BSSW">BSSW</option>
+                <option value="BSPA">BSPA</option>
+                <option value="BBA">BBA</option>
+                <option value="BSHRM">BSHRM</option>
+            </select>
+
+            <label>Interests:</label>
+            <input type="checkbox" id="web-dev" name="interests" value="Web Development">
+            <label for="web-dev">Web Development</label>
+            <input type="checkbox" id="data-science" name="interests" value="Data Science">
+            <label for="data-science">Data Science</label>
+            <input type="checkbox" id="networking" name="interests" value="Networking">
+            <label for="networking">Networking</label>
+            <input type="checkbox" id="graphic-design" name="interests" value="Graphic Design">
+            <label for="graphic-design">Graphic Design</label>
+
+            <button type="submit">Enroll Now</button>
+        </form>
+    </section>
+
+    <section class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                    <th>Sex</th>
+                    <th>Course</th>
+                    <th>Interests</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>John Bonggay</td>
+                    <td>john@example.com</td>
+                    <td>20</td>
+                    <td>Male</td>
+                    <td>BSIT</td>
+                    <td>Web Development, Data Science</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Anne Fedelino</td>
+                    <td>anfede@example.com</td>
+                    <td>22</td>
+                    <td>Female</td>
+                    <td>BSSW</td>
+                    <td>Networking, Graphic Design</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Rafael Caalam</td>
+                    <td>arf_arf@gmail.com</td>
+                    <td>25</td>
+                    <td>Male</td>
+                    <td>BSPA</td>
+                    <td>Web Development, Networking</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Danica Concha</td>
+                    <td>daconcha@example.com</td>
+                    <td>21</td>
+                    <td>Female</td>
+                    <td>BSIT</td>
+                    <td>Data Science, Graphic Design</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+</body>
+</html>
